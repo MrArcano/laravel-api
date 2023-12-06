@@ -1,0 +1,16 @@
+.project{
+    .add-project{
+        font-size: 32px;
+        text-align: right;
+        margin: 0;
+        a{
+            color: #ccc4c2;
+            padding:0 2px;
+            &:hover{
+                color: rgb(220, 100, 60);
+            }
+        }
+    }
+}
+
+

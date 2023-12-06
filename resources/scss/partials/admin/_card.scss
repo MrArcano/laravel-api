@@ -1,0 +1,60 @@
+.card-csm {
+    font-family: 'Montserrat', sans-serif;
+
+	border-radius: 8px;
+	color: white;
+	padding: 10px;
+	position: relative;
+
+    font-size: 12px;
+
+	.zmdi {
+		color: white;
+		font-size: 32px;
+		opacity: 0.3;
+		position: absolute;
+		right: 13px;
+		top: 13px;
+	}
+
+	.stat {
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
+		margin-top: 25px;
+		padding: 10px 10px 0;
+		text-transform: uppercase;
+        a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+	}
+
+	.title {
+		display: inline-block;
+		padding: 10px 10px 0;
+		text-transform: uppercase;
+	}
+
+	.value {
+		font-size: 28px;
+		padding: 0 10px;
+	}
+
+	&.blue {
+		background-color: #2298F1;
+	}
+
+	&.green {
+		background-color: #66B92E;
+	}
+
+	&.orange {
+		background-color: #DA932C;
+	}
+
+	&.red {
+		background-color: #D65B4A;
+	}
+}

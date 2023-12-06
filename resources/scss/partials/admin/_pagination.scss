@@ -1,0 +1,28 @@
+.pagination-custom{
+    p.small.text-muted{
+        margin: 0;
+        color: #ccc4c2 !important;
+    }
+    ul.pagination{
+        margin: 0;
+        li{
+            .page-link{
+                background-color: #393b44 ;
+                color: #ccc4c2 !important;
+                border: none;
+                &:hover{
+                    background-color: rgb(220, 100, 60);
+                    color: white !important;
+                }
+            }
+            &.active{
+                .page-link{
+                    background-color: rgb(181, 75, 48) ;
+                    color: white !important;
+
+                }
+            }
+
+        }
+    }
+}

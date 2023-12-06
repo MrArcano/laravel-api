@@ -1,0 +1,96 @@
+@import '~bootstrap/scss/bootstrap';
+@import './partials/admin/header';
+@import './partials/admin/pagination';
+@import './partials/admin/project';
+@import './partials/admin/card';
+@import './partials/admin/show';
+
+body{
+    background-color: #16171c ;
+    color: #fff;
+}
+
+.main-wrapper{
+    height: calc(100vh - 60px);
+
+    aside{
+        background-color: #202125;
+        border-right: 1px solid #646464;
+
+        width: 250px;
+        height: 100%;
+        ul{
+            list-style: none;
+            li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    text-align: left;
+                }
+                &.active{
+                    a{
+                        background-color: rgb(181, 75, 48);
+                    }
+                }
+            }
+        }
+    }
+
+    .dashboard{
+        padding: 32px;
+        width: calc(100% - 250px);
+        height: 100%;
+        overflow: auto;
+    }
+
+}
+
+
+
+.btn-custom{
+    background-color: transparent;
+    // border: none;
+    &:hover{
+        background-color: rgb(220, 100, 60);
+    }
+    &.active{
+        background-color: rgb(181, 75, 48);
+    }
+}
+
+
+
+table{
+    text-align: center;
+    .btn-custom{
+        border: none;
+        margin: 0 2px;
+        padding: 0;
+        color: #393b44;
+        &:hover{
+            color: rgb(220, 100, 60);
+            background-color: transparent;
+        }
+    }
+}
+
+main{
+    h1{
+        margin-bottom: 32px;
+    }
+}
+
+.alert{
+    padding: 8px;
+    p{
+        margin: 0;
+    }
+}
+
+.form-hidden{
+    background-color: transparent;
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}

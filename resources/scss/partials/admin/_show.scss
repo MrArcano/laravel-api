@@ -1,0 +1,88 @@
+/*------------------*
+ * Global variables *
+ *------------------*/
+// The official UK business card size.
+// @link: https://www.ne14design.co.uk/articles/business-card-dimensions.htm
+
+$corner-size: 12px !default;
+
+// Colours.
+$colour-card-bg: #302f34 !default;
+$colour-gold: #d4cd96 !default;
+
+/*------------*
+ * CSS Styles *
+ *------------*/
+
+.show{
+    min-height: 400px;
+    .card-wrapper {
+        width: 100%;
+        height: 100%;
+        .card-csm {
+            color: $colour-gold;
+            height: 100%;
+        }
+    }
+}
+
+.card-front {
+    background: repeating-linear-gradient(135deg,
+        rgba(darken($colour-card-bg, 50), .3),
+        transparent 1px,
+        rgba(darken($colour-card-bg, 50), .3) 2px
+        );
+
+    background-size: 3px 3px;
+    background-color: $colour-card-bg;
+    border-radius: 1px;
+    box-shadow: 0px -6px 8px 0px rgba(#000, .1),
+        0px 6px 8px 0px rgba(#000, .1),
+        6px 0px 8px 0px rgba(#000, .1),
+        -6px 0px 8px 0px rgba(#000, .1);
+
+    height: 100%;
+    padding: 16px;
+
+    .layer {
+        height: 100%;
+        position: relative;
+
+        .corner {
+            border-right: 2px solid $colour-gold;
+            border-top: 2px solid $colour-gold;
+            height: $corner-size;
+            width: $corner-size;
+            position: absolute;
+
+            &:nth-of-type(1) {
+                right: 0;
+                top: 0;
+                border-color: rgb(255, 100, 100);
+            }
+
+            &:nth-of-type(2) {
+                left: 0;
+                top: 0;
+                transform: rotateZ(-90deg);
+                border-color: rgb(100, 255, 100);
+            }
+
+            &:nth-of-type(3) {
+                bottom: 0;
+                left: 0;
+                transform: rotateZ(180deg);
+                border-color: rgb(255, 255, 100);
+            }
+
+            &:nth-of-type(4) {
+                bottom: 0;
+                right: 0;
+                transform: rotateZ(90deg);
+                border-color: rgb(0, 100, 255);
+            }
+        }
+    }
+}
+
+
