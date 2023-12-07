@@ -114,7 +114,7 @@
                                         {{-- se non ci sono errori, devo checkare solo se mi trovo nell'edit --}}
                                         @if(!$errors->count() && $project?->tecnologies->contains( $tecnology->id ) ) checked @endif
                                         {{-- se ci sono errori, devo checkare i vecchi elementi passati dall'old --}}
-                                        @if($errors->count() && in_array($tecnology->id,old('tecnologies'))) checked @endif
+                                        @if($errors->count() && in_array($tecnology->id,old('tecnologies',[]))) checked @endif
                                         name="tecnologies[]">
                                     <label class="btn btn-outline-info badge" for="tecnology-{{ $tecnology->id }}">{{ $tecnology->name }}</label>
                                 @endforeach
