@@ -61,12 +61,12 @@
                             @if ($project->type)
                                 <span class="badge text-bg-dark">{{$project->type->name}}</span>
                             @else
-                                -
+                            <span class="badge text-bg-warning">No Type</span>
                             @endif
                         </td>
                         <td>
                             @forelse ($project->tecnologies as $tecnology)
-                                <a href="{{route('admin.tecnology.projects-tecnology',$tecnology)}}" class="badge text-bg-info text-decoration-none">{{$tecnology->name}}</a>
+                                <a href="{{route('admin.tecnology.projects-tecnology',$tecnology)}}" class="badge text-bg-dark text-decoration-none">{{$tecnology->name}}</a>
                             @empty
                                 <a href="{{route('admin.project.no-tecnology')}}" class="badge text-bg-warning text-decoration-none">No Tecnology</a>
                             @endforelse
