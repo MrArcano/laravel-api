@@ -143,7 +143,6 @@
                     {{-- sezione immagine --}}
                     <div class="mb-3">
                         <label for="image" class="form-label fw-bold">Immagine: </label>
-
                             <div class="mb-3 position-relative">
                                 <img
                                     id="image-preview"

@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Api\PageController;
+use App\Http\Controllers\Api\ProjectController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +19,5 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('/projects-api',[PageController::class , 'index']);
+Route::get('/projects-api',[ProjectController::class , 'index']);
+Route::get('/get-project/{slug}',[ProjectController::class , 'getProject']);
