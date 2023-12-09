@@ -40,6 +40,8 @@ Route::middleware(['auth','verified'])
             Route::get('project/{project}/delete-image',[ProjectController::class,'destroy_image'])->name('project.delete-image');
             Route::get('project/tecnology/{tecnology}',[TecnologyController::class,'projectTecnology'])->name('tecnology.projects-tecnology');
             Route::get('project/order-by/{field}/{order}',[ProjectController::class,'orderBy'])->name('project.order-by');
+            Route::get('import-csv',[DashboardController::class,'importCsv'])->name('import-csv');
+            Route::get('export-csv',[DashboardController::class,'exportCsv'])->name('export-csv');
         });
 
 require __DIR__.'/auth.php';
