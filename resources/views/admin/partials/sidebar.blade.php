@@ -13,6 +13,9 @@
             <li class="text-center my-2 {{ Route::currentRouteName() === 'admin.type.index' ? 'active' : ''}}">
                 <a class="btn btn-custom w-100" href="{{ route('admin.type.index')}}"><i class="fa-solid fa-circle-half-stroke"></i> Types</a>
             </li>
+            <li class="text-center my-2 {{ Route::currentRouteName() === 'admin.import-export-csv' ? 'active' : ''}}">
+                <a class="btn btn-custom w-100" href="{{ route('admin.import-export-csv')}}"><i class="fa-solid fa-file-csv"></i> Import/Export CSV</a>
+            </li>
         </ul>
     </nav>
 </aside>
