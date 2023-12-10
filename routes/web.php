@@ -4,7 +4,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\TecnologyController;
 use App\Http\Controllers\Admin\TypeController;
-use App\Http\Controllers\CSVController;
+use App\Http\Controllers\Admin\CSVController;
 use App\Http\Controllers\Guest\PageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
