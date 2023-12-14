@@ -147,7 +147,7 @@
                                 <img
                                     id="image-preview"
                                     class="img-fluid rounded"
-                                    onerror="this.src ='/img/placeholder.png'"
+                                    onerror="this.src ='{{ asset('img/placeholder.png') }}'"
                                     src="{{ asset('storage/'. $project?->image ) }}"
                                     alt="{{ $project?->image_name }}">
                                 @if ($project)
