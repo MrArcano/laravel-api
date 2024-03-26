@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\LeadController;
 use App\Http\Controllers\Api\ProjectController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -19,5 +20,15 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
+// Get All projects
 Route::get('/projects-api',[ProjectController::class , 'index']);
+
+// Get All project by Type
+
+// Get All project by Tecnology
+
+// Get Detail project by slug
 Route::get('/get-project/{slug}',[ProjectController::class , 'getProject']);
+
+// Send email
+Route::post('/send-email',[LeadController::class, 'store']);
